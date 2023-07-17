@@ -34,6 +34,26 @@ namespace Logical
             return $"{add},{sub},{mul},{div}";
         }
 
+        public bool isResultSame(int a,int b)
+        {
+            /*int add = a + b;
+            int sub = a - b;
+            int mul = a * b;
+            int div = a / b;
+            if (add == mul)
+            {
+                return true;
+            }
+            if (sub == div)
+            {
+                return true;
+            }
+
+            return false;*/
+
+            return a == b;
+        }
+
         
 
     }

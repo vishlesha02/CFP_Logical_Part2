@@ -29,6 +29,7 @@ namespace Logical
                         Console.WriteLine("Press 1 to Add two numbers");
                         Console.WriteLine("Press 2 to Convert Celsius to Fahrenheit");
                         Console.WriteLine("Press 3 to Get Elementary Operation Results");
+                        Console.WriteLine("Press 4 to Check if Result is same");
                         Console.WriteLine("-----------------------------------------");
 
 
@@ -54,6 +55,14 @@ namespace Logical
                                 {
                                     Console.WriteLine(basic.elementaryOperations(2,2));
                                     break;
+                                }
+                            case 4:
+                                {
+                                    // Console.WriteLine(basic.isResultSame(2,2));
+                                    Console.WriteLine(basic.isResultSame(2+2,2*2));
+                                    Console.WriteLine(basic.isResultSame(2-2,4/2));
+                                    break;
+
                                 }
                             default: 
                                 {
