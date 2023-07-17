@@ -34,6 +34,7 @@ namespace Logical
                         Console.WriteLine("Press 5 for Modulo Operations");
                         Console.WriteLine("Press 6 to Get Cube");
                         Console.WriteLine("Press 7 to swap Numbers");
+                        Console.WriteLine("Press 8 to Exit");
                         Console.WriteLine("-----------------------------------------");
 
 
@@ -90,9 +91,13 @@ namespace Logical
                                     break;
 
                                 }
+                            case 8:
+                                {
+                                    break;
+                                }
                             default:
                                 {
-                                    Console.WriteLine("You Entered Wrong Option");
+                                    Console.WriteLine("You Entered Wrong Number");
                                     break;
                                 }
                         }
@@ -106,6 +111,7 @@ namespace Logical
                         Console.WriteLine("Enter Your Choice");
                         Console.WriteLine("Press 1 to Get Absolute Value");
                         Console.WriteLine("Press 2 to Get multiplication if both numbers are divisible by 2 or 3, otherwise returns thier sum.");
+                        Console.WriteLine("Press 3 to check if it consists only uppercase letters");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -123,12 +129,18 @@ namespace Logical
                                 {
                                     Console.WriteLine(conditional.divisibleByTwoOrThree(15,30));
                                     Console.WriteLine(conditional.divisibleByTwoOrThree(2,90));
+                                    Console.WriteLine(conditional.divisibleByTwoOrThree(7,12));
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    Console.WriteLine(conditional.upperCase("XYX"));
+                                    Console.WriteLine(conditional.upperCase("dog"));
                                     break;
                                 }
                             default:
-
                                 {
-                                    Console.WriteLine("You Entered Wrong Option");
+                                    Console.WriteLine("You Entered Wrong Number");
                                     break;
                                 }
 
@@ -136,10 +148,15 @@ namespace Logical
                         break;
 
                     }
+                case 4:
+                    {
+
+                        break;
+                    }
                 default:
 
                     {
-                        Console.WriteLine("You Entered Wrong Option");
+                        Console.WriteLine("You Entered Wrong Number");
                         break;
 
                     }                    
