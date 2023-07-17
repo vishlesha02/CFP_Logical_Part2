@@ -32,6 +32,7 @@ namespace Logical
                         Console.WriteLine("Press 4 to Check if Result is same");
                         Console.WriteLine("Press 5 for Modulo Operations");
                         Console.WriteLine("Press 6 to Get Cube");
+                        Console.WriteLine("Press 7 to swap Numbers");
                         Console.WriteLine("-----------------------------------------");
 
 
@@ -76,6 +77,17 @@ namespace Logical
                                     Console.WriteLine(basic.cube(2));
                                     Console.WriteLine(basic.cube(-5.5));
                                     break;
+                                }
+                            case 7:
+                                {
+                                    Console.WriteLine("Before Swap : a = 87,b = 45");
+                                    Console.Write("After swap : ");
+                                    Console.WriteLine(basic.swap(87,45));
+                                    Console.WriteLine("Before Swap : a = -13,b = 2");
+                                    Console.Write("After swap : ");
+                                    Console.WriteLine(basic.swap(-13,2));
+                                    break;
+
                                 }
                             default: 
                                 {

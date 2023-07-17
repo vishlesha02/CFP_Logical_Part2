@@ -64,5 +64,16 @@ namespace Logical
             return a * a * a;
         }
 
+        public string swap(int a, int b)
+        {
+            int temp;
+            temp = a;
+            a = b;
+            b = temp;
+
+            return $"a = {a}, b = {b}";
+        
+        }
+
     }
 }
