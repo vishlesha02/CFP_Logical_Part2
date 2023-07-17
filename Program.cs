@@ -105,6 +105,7 @@ namespace Logical
 
                         Console.WriteLine("Enter Your Choice");
                         Console.WriteLine("Press 1 to Get Absolute Value");
+                        Console.WriteLine("Press 2 to Get multiplication if both numbers are divisible by 2 or 3, otherwise returns thier sum.");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -117,6 +118,12 @@ namespace Logical
                                     Console.WriteLine(conditional.absoluteValue(-392));
                                     break;
 
+                                }
+                            case 2:
+                                {
+                                    Console.WriteLine(conditional.divisibleByTwoOrThree(15,30));
+                                    Console.WriteLine(conditional.divisibleByTwoOrThree(2,90));
+                                    break;
                                 }
                             default:
 
