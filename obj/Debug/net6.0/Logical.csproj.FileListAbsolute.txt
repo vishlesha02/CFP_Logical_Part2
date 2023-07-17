@@ -1,0 +1,15 @@
+C:\Users\DELL\source\repos\Logical\Logical\bin\Debug\net6.0\Logical.exe
+C:\Users\DELL\source\repos\Logical\Logical\bin\Debug\net6.0\Logical.deps.json
+C:\Users\DELL\source\repos\Logical\Logical\bin\Debug\net6.0\Logical.runtimeconfig.json
+C:\Users\DELL\source\repos\Logical\Logical\bin\Debug\net6.0\Logical.dll
+C:\Users\DELL\source\repos\Logical\Logical\bin\Debug\net6.0\Logical.pdb
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.AssemblyInfo.cs
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.dll
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\refint\Logical.dll
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.pdb
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\Logical.genruntimeconfig.cache
+C:\Users\DELL\source\repos\Logical\Logical\obj\Debug\net6.0\ref\Logical.dll
