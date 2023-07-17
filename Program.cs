@@ -117,6 +117,7 @@ namespace Logical
                         Console.WriteLine("Press 6 to check if array is sorted in ascending order.");
                         Console.WriteLine("Press 7 to check if at least one neighbour of middle letter is its neighbour in the alphabet.");
                         Console.WriteLine("Press 8 to check if if number is positive, negative or zero");
+                        Console.WriteLine("Press 9 to check if year is leap");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -172,6 +173,12 @@ namespace Logical
                                     Console.WriteLine(conditional.positiveNegativeZero(5.24));
                                     Console.WriteLine(conditional.positiveNegativeZero(0.0));
                                     Console.WriteLine(conditional.positiveNegativeZero(-994.53));
+                                    break;
+                                }
+                            case 9:
+                                {
+                                    Console.WriteLine(conditional.leapYear(2016));
+                                    Console.WriteLine(conditional.leapYear(2018));
                                     break;
                                 }
                             default:
