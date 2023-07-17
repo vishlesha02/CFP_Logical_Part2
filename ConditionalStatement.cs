@@ -58,5 +58,18 @@ namespace Logical
         {
             return (str[0] == str[1] - 1  || str[0] == str[1] + 1 || str[1] == str[2] - 1 || str[1] == str[2] + 1);
         }
+
+        public string positiveNegativeZero(double num)
+        {
+            if (num > 0.0)
+            {
+                return "positive";
+            }
+            else if (num < 0.0)
+            {
+                return "negative";
+            }
+            return "Zero";
+        }
     }
 }

@@ -116,6 +116,7 @@ namespace Logical
                         Console.WriteLine("Press 5 to check if checks if Number is even");
                         Console.WriteLine("Press 6 to check if array is sorted in ascending order.");
                         Console.WriteLine("Press 7 to check if at least one neighbour of middle letter is its neighbour in the alphabet.");
+                        Console.WriteLine("Press 8 to check if if number is positive, negative or zero");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -164,6 +165,13 @@ namespace Logical
                                 {
                                     Console.WriteLine(conditional.neighbour("XYZ"));
                                     Console.WriteLine(conditional.neighbour("GWK"));
+                                    break;
+                                }
+                            case 8:
+                                {
+                                    Console.WriteLine(conditional.positiveNegativeZero(5.24));
+                                    Console.WriteLine(conditional.positiveNegativeZero(0.0));
+                                    Console.WriteLine(conditional.positiveNegativeZero(-994.53));
                                     break;
                                 }
                             default:
