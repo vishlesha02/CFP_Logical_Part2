@@ -39,5 +39,14 @@ namespace Logical
             }
             return false;
         }
+
+        public bool numberIsEven(int num)
+        {
+            if (num % 2 == 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
