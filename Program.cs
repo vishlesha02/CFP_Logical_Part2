@@ -25,9 +25,10 @@ namespace Logical
                 {
                     case 1:
                     {
-                        Console.WriteLine("Enter your choice ");
-                        Console.WriteLine("Press 1 to  Add two numbers");
-                        Console.WriteLine("Press 2 to convert Celsius to Fahrenheit");
+                        Console.WriteLine("Enter your choice");
+                        Console.WriteLine("Press 1 to Add two numbers");
+                        Console.WriteLine("Press 2 to Convert Celsius to Fahrenheit");
+                        Console.WriteLine("Press 3 to Get Elementary Operation Results");
                         Console.WriteLine("-----------------------------------------");
 
 
@@ -47,6 +48,11 @@ namespace Logical
                                     Console.WriteLine(basic.celsiusToFahrenheit(-300));
                                     Console.WriteLine(basic.celsiusToFahrenheit(100));
                                     
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    Console.WriteLine(basic.elementaryOperations(2,2));
                                     break;
                                 }
                             default: 

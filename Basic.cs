@@ -24,5 +24,17 @@ namespace Logical
             return $"{fahrenheit}";
         }
 
+        public string elementaryOperations(int a,int b)
+        {
+            int add = a + b;
+            int sub = a - b;
+            int mul = a * b;
+            int div = a / b;
+        
+            return $"{add},{sub},{mul},{div}";
+        }
+
+        
+
     }
 }
