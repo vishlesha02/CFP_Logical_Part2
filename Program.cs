@@ -112,6 +112,7 @@ namespace Logical
                         Console.WriteLine("Press 1 to Get Absolute Value");
                         Console.WriteLine("Press 2 to Get multiplication if both numbers are divisible by 2 or 3, otherwise returns thier sum.");
                         Console.WriteLine("Press 3 to check if it consists only uppercase letters");
+                        Console.WriteLine("Press 4 to check if multiplication or sum of two first numbers is greater than third one");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -136,6 +137,12 @@ namespace Logical
                                 {
                                     Console.WriteLine(conditional.upperCase("XYX"));
                                     Console.WriteLine(conditional.upperCase("dog"));
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    Console.WriteLine(conditional.greaterThanThirdOne(new int[] { 2, 7, 12 }));
+                                    Console.WriteLine(conditional.greaterThanThirdOne(new int[] {-5, -8, 50}));
                                     break;
                                 }
                             default:

@@ -28,5 +28,16 @@ namespace Logical
             return (a[0] >= 65 && a[1] >= 65 && a[2] >= 65) && (a[0] <= 90 && a[1] <= 90 && a[2] <= 90);
         
         }
+
+        public bool greaterThanThirdOne(int[] arr)
+        {
+            int mul = arr[0] * arr[1];
+            int sum = arr[0] + arr[1];
+            if (mul > arr[2] || sum > arr[2])
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
