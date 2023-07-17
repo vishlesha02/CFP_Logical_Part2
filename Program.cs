@@ -30,6 +30,7 @@ namespace Logical
                         Console.WriteLine("Press 2 to Convert Celsius to Fahrenheit");
                         Console.WriteLine("Press 3 to Get Elementary Operation Results");
                         Console.WriteLine("Press 4 to Check if Result is same");
+                        Console.WriteLine("Press 5 for Modulo Operations");
                         Console.WriteLine("-----------------------------------------");
 
 
@@ -63,6 +64,11 @@ namespace Logical
                                     Console.WriteLine(basic.isResultSame(2-2,4/2));
                                     break;
 
+                                }
+                            case 5:
+                                {
+                                    Console.WriteLine(basic.moduloOperations(8,5,2));
+                                    break;
                                 }
                             default: 
                                 {

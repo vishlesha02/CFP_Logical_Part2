@@ -54,6 +54,11 @@ namespace Logical
             return a == b;
         }
 
+        public double moduloOperations(int a,int b,int c)
+        {         
+            return a%b%c;
+        }
+
         
 
     }
