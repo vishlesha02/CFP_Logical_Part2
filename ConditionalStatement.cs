@@ -53,5 +53,10 @@ namespace Logical
         {
             return (arr[0] < arr[1] && arr[1] < arr[2]);
         }
+
+        public bool neighbour(string str)
+        {
+            return (str[0] == str[1] - 1  || str[0] == str[1] + 1 || str[1] == str[2] - 1 || str[1] == str[2] + 1);
+        }
     }
 }
