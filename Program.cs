@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Logical
 {
-    internal class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
-            Basic basic=new Basic();
+            Basic basic = new Basic();
+            ConditionalStatement conditional = new ConditionalStatement();
 
             Console.WriteLine("Press 1 for Basic");
             Console.WriteLine("Press 2 for Conditional Statements");
@@ -19,11 +20,11 @@ namespace Logical
             Console.WriteLine("-----------------------------------------");
 
 
-            int choice=int.Parse(Console.ReadLine());
-            
-                switch (choice)
-                {
-                    case 1:
+            int choice = int.Parse(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
                     {
                         Console.WriteLine("Enter your choice");
                         Console.WriteLine("Press 1 to Add two numbers");
@@ -42,7 +43,7 @@ namespace Logical
                         {
                             case 1:
                                 {
-                                    int result = basic.addTwoNumbers (10,20);
+                                    int result = basic.addTwoNumbers(10, 20);
                                     Console.WriteLine(result);
                                     break;
                                 }
@@ -51,25 +52,25 @@ namespace Logical
                                     Console.WriteLine(basic.celsiusToFahrenheit(0));
                                     Console.WriteLine(basic.celsiusToFahrenheit(-300));
                                     Console.WriteLine(basic.celsiusToFahrenheit(100));
-                                    
+
                                     break;
                                 }
                             case 3:
                                 {
-                                    Console.WriteLine(basic.elementaryOperations(2,2));
+                                    Console.WriteLine(basic.elementaryOperations(2, 2));
                                     break;
                                 }
                             case 4:
                                 {
                                     // Console.WriteLine(basic.isResultSame(2,2));
-                                    Console.WriteLine(basic.isResultSame(2+2,2*2));
-                                    Console.WriteLine(basic.isResultSame(2-2,4/2));
+                                    Console.WriteLine(basic.isResultSame(2 + 2, 2 * 2));
+                                    Console.WriteLine(basic.isResultSame(2 - 2, 4 / 2));
                                     break;
 
                                 }
                             case 5:
                                 {
-                                    Console.WriteLine(basic.moduloOperations(8,5,2));
+                                    Console.WriteLine(basic.moduloOperations(8, 5, 2));
                                     break;
                                 }
                             case 6:
@@ -82,36 +83,61 @@ namespace Logical
                                 {
                                     Console.WriteLine("Before Swap : a = 87,b = 45");
                                     Console.Write("After swap : ");
-                                    Console.WriteLine(basic.swap(87,45));
+                                    Console.WriteLine(basic.swap(87, 45));
                                     Console.WriteLine("Before Swap : a = -13,b = 2");
                                     Console.Write("After swap : ");
-                                    Console.WriteLine(basic.swap(-13,2));
+                                    Console.WriteLine(basic.swap(-13, 2));
                                     break;
 
                                 }
-                            default: 
+                            default:
                                 {
                                     Console.WriteLine("You Entered Wrong Option");
                                     break;
                                 }
                         }
+
+                        break;
+                    }
+                case 2:
+
+                    {
+
+                        Console.WriteLine("Enter Your Choice");
+                        Console.WriteLine("Press 1 to Get Absolute Value");
+                        Console.WriteLine("-----------------------------------------");
+
+                        int choice3 = int.Parse(Console.ReadLine());
+
+                        switch (choice3)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine(conditional.absoluteValue(6832));
+                                    Console.WriteLine(conditional.absoluteValue(-392));
+                                    break;
+
+                                }
+                            default:
+
+                                {
+                                    Console.WriteLine("You Entered Wrong Option");
+                                    break;
+                                }
+
+                        }
                         break;
 
                     }
                 default:
+
                     {
                         Console.WriteLine("You Entered Wrong Option");
                         break;
-                    }
 
-                    
-               
-            
-                }
-
-
-
-
+                    }                    
+            }
         }
     }
 }
+
