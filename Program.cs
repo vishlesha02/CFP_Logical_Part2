@@ -114,6 +114,7 @@ namespace Logical
                         Console.WriteLine("Press 3 to check if it consists only uppercase letters");
                         Console.WriteLine("Press 4 to check if multiplication or sum of two first numbers is greater than third one");
                         Console.WriteLine("Press 5 to check if checks if Number is even");
+                        Console.WriteLine("Press 6 to check if array is sorted in ascending order.");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -150,6 +151,12 @@ namespace Logical
                                 {
                                     Console.WriteLine(conditional.numberIsEven(4));
                                     Console.WriteLine(conditional.numberIsEven(3));
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    Console.WriteLine(conditional.sortedAscending(new int[] {3,7,10}));
+                                    Console.WriteLine(conditional.sortedAscending(new int[] {74,62,99}));
                                     break;
                                 }
                             default:

@@ -48,5 +48,10 @@ namespace Logical
             }
             return false;
         }
+
+        public bool sortedAscending(int[] arr)
+        {
+            return (arr[0] < arr[1] && arr[1] < arr[2]);
+        }
     }
 }
