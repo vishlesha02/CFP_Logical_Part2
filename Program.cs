@@ -31,6 +31,7 @@ namespace Logical
                         Console.WriteLine("Press 3 to Get Elementary Operation Results");
                         Console.WriteLine("Press 4 to Check if Result is same");
                         Console.WriteLine("Press 5 for Modulo Operations");
+                        Console.WriteLine("Press 6 to Get Cube");
                         Console.WriteLine("-----------------------------------------");
 
 
@@ -68,6 +69,12 @@ namespace Logical
                             case 5:
                                 {
                                     Console.WriteLine(basic.moduloOperations(8,5,2));
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    Console.WriteLine(basic.cube(2));
+                                    Console.WriteLine(basic.cube(-5.5));
                                     break;
                                 }
                             default: 

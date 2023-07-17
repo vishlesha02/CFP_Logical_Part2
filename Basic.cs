@@ -59,7 +59,10 @@ namespace Logical
             return a%b%c;
         }
 
-        
+        public double cube(double a)
+        {
+            return a * a * a;
+        }
 
     }
 }
