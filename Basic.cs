@@ -8,6 +8,10 @@ namespace Logical
 {
     public class Basic
     {
-       
+        public int AddTwoNumbers(int a, int b)
+        { 
+            return a+b;
+        }
+
     }
 }

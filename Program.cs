@@ -31,7 +31,8 @@ namespace Logical
                         {
                             case 1:
                                 {
-                                   
+                                    int result = basic.AddTwoNumbers (10,20);
+                                    Console.WriteLine(result);
                                     break;
                                 }
 
