@@ -202,6 +202,7 @@
                         Console.WriteLine("Press 2 to get sum of Series (fractions)");
                         Console.WriteLine("Press 3 to get sorted array in ascending order");
                         Console.WriteLine("Press 4 to get biggest number in this array");
+                        Console.WriteLine("Press 5 to return number of times that two 7's are next to each other in an array");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -231,6 +232,12 @@
                             case 4:
                                 {
                                     Console.WriteLine(loop.BiggestNumber(new int[] {190,291,145,209,280,300 }));
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    Console.WriteLine(loop.TwoSevens(new int[] { 8, 2, 5, 7, 9, 0, 7, 7, 3, 1 }));
+                                    Console.WriteLine(loop.TwoSevens(new int[] { 9, 4, 5, 3, 7, 7, 7, 3, 2, 5, 7, 7 }));
                                     break;
                                 }
                             default:
