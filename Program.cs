@@ -200,6 +200,7 @@
                     {
                         Console.WriteLine("Press 1 to get 10 by 10 multiplication table");
                         Console.WriteLine("Press 2 to get sum of Series (fractions)");
+                        Console.WriteLine("Press 3 to get sorted array in ascending order");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -214,6 +215,18 @@
                             case 2:
                                 {
                                     Console.WriteLine(loop.FractionSum(5));
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    int[] sortedArr = loop.SortArrayAscending(new int[] { 0, -23, 9, 18, -51, 1, 90, 57, -1, 25 });
+
+                                    foreach (var s in sortedArr)
+                                    {
+                                        Console.Write($"{s} "); 
+                                    }
+
+
                                     break;
                                 }
                             default:
