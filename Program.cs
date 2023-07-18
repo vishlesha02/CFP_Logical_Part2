@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Logical
+﻿namespace Logical
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            
             Basic basic = new Basic();
             ConditionalStatement conditional = new ConditionalStatement();
 
@@ -118,6 +113,8 @@ namespace Logical
                         Console.WriteLine("Press 7 to check if at least one neighbour of middle letter is its neighbour in the alphabet.");
                         Console.WriteLine("Press 8 to check if if number is positive, negative or zero");
                         Console.WriteLine("Press 9 to check if year is leap");
+                        Console.WriteLine("Press 10 to check if given number contains digit 3");
+
                         Console.WriteLine("-----------------------------------------");
 
                         int choice3 = int.Parse(Console.ReadLine());
@@ -133,9 +130,9 @@ namespace Logical
                                 }
                             case 2:
                                 {
-                                    Console.WriteLine(conditional.divisibleByTwoOrThree(15,30));
-                                    Console.WriteLine(conditional.divisibleByTwoOrThree(2,90));
-                                    Console.WriteLine(conditional.divisibleByTwoOrThree(7,12));
+                                    Console.WriteLine(conditional.divisibleByTwoOrThree(15, 30));
+                                    Console.WriteLine(conditional.divisibleByTwoOrThree(2, 90));
+                                    Console.WriteLine(conditional.divisibleByTwoOrThree(7, 12));
                                     break;
                                 }
                             case 3:
@@ -147,7 +144,7 @@ namespace Logical
                             case 4:
                                 {
                                     Console.WriteLine(conditional.greaterThanThirdOne(new int[] { 2, 7, 12 }));
-                                    Console.WriteLine(conditional.greaterThanThirdOne(new int[] {-5, -8, 50}));
+                                    Console.WriteLine(conditional.greaterThanThirdOne(new int[] { -5, -8, 50 }));
                                     break;
                                 }
                             case 5:
@@ -158,8 +155,8 @@ namespace Logical
                                 }
                             case 6:
                                 {
-                                    Console.WriteLine(conditional.sortedAscending(new int[] {3,7,10}));
-                                    Console.WriteLine(conditional.sortedAscending(new int[] {74,62,99}));
+                                    Console.WriteLine(conditional.sortedAscending(new int[] { 3, 7, 10 }));
+                                    Console.WriteLine(conditional.sortedAscending(new int[] { 74, 62, 99 }));
                                     break;
                                 }
                             case 7:
@@ -179,6 +176,12 @@ namespace Logical
                                 {
                                     Console.WriteLine(conditional.leapYear(2016));
                                     Console.WriteLine(conditional.leapYear(2018));
+                                    break;
+                                }
+                            case 10:
+                                {
+                                    Console.WriteLine(conditional.NumberContainsThree(7201432));
+                                    Console.WriteLine(conditional.NumberContainsThree(72014));
                                     break;
                                 }
                             default:
@@ -202,7 +205,7 @@ namespace Logical
                         Console.WriteLine("You Entered Wrong Number");
                         break;
 
-                    }                    
+                    }
             }
         }
     }

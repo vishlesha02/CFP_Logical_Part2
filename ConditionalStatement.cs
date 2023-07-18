@@ -42,11 +42,8 @@ namespace Logical
 
         public bool numberIsEven(int num)
         {
-            if (num % 2 == 0)
-            {
-                return true;
-            }
-            return false;
+            return (num % 2 == 0);
+            
         }
 
         public bool sortedAscending(int[] arr)
@@ -75,6 +72,22 @@ namespace Logical
         public bool leapYear(int year)
         {
             return (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
+        }
+
+        public bool NumberContainsThree(int num)
+        {
+            while (num > 0)
+            {
+                if (num % 10 == 3)
+                {
+                    return true;
+                }
+
+                num = num/10;
+            }
+            return false;
+
+
         }
     }
 }
