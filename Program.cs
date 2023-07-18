@@ -7,6 +7,7 @@
             
             Basic basic = new Basic();
             ConditionalStatement conditional = new ConditionalStatement();
+            Loops loop = new Loops();
 
             Console.WriteLine("Press 1 for Basic");
             Console.WriteLine("Press 2 for Conditional Statements");
@@ -194,6 +195,30 @@
                         break;
 
                     }
+              
+                case 3:
+                    {
+                        Console.WriteLine("Press 1 to get 10 by 10 multiplication table");
+                        Console.WriteLine("-----------------------------------------");
+
+                        int choice4 = int.Parse(Console.ReadLine());
+
+                        switch (choice4)
+                        {
+                            case 1:
+                                {
+                                    loop.MultiplicationTable();
+                                    break;
+                                }
+                            default:
+                                {
+                                    Console.WriteLine("You Entered Wrong Number");
+                                    break;
+                                }
+                        }
+                        break;
+                    }
+
                 case 4:
                     {
 
