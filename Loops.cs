@@ -96,5 +96,18 @@ namespace Logical
             }
             return found;
         }
+
+        public string EvenNumbers()
+        {
+            string str=string.Empty;
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    str += i + " ";
+                }
+            }
+            return str;
+        }
     }
 }
