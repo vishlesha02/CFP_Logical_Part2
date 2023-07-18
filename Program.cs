@@ -204,7 +204,8 @@
                         Console.WriteLine("Press 4 to get biggest number in this array");
                         Console.WriteLine("Press 5 to return number of times that two 7's are next to each other in an array");
                         Console.WriteLine("Press 6 to checks if there are three adjacent numbers where second is greater by 1 than the first one and third is greater by 1 than the second one");
-                        Console.WriteLine("Press 7 to returns a string of even numbers greater than 0 and less than 100");
+                        Console.WriteLine("Press 7 to return a string of even numbers greater than 0 and less than 100");
+                        Console.WriteLine("Press 8 to draw hourglass shape");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -251,6 +252,11 @@
                             case 7:
                                 {
                                     Console.WriteLine(loop.EvenNumbers());
+                                    break;
+                                }
+                            case 8:
+                                {
+                                    loop.HourGlass();
                                     break;
                                 }
                             default:
