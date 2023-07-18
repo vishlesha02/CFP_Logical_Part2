@@ -76,12 +76,25 @@ namespace Logical
             int count=0;
             for (int i = 0; i < arr.Length-1; i++)
             {
-                if (arr[i] == arr[i+1])
+                if (arr[i] == 7 && arr[i+1]==7)
                 {
                     count++;
                 }
             }
             return count;
+        }
+
+        public bool IncreasingAdjacent(int[] arr)
+        {
+            bool found=false;
+            for (int i=0;i< arr.Length-2;i++)
+            {
+                if (arr[i] + 1 == arr[i + 1] && arr[i+1]+1 == arr[i+2])
+                {
+                    found = true;
+                }
+            }
+            return found;
         }
     }
 }

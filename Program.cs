@@ -203,6 +203,7 @@
                         Console.WriteLine("Press 3 to get sorted array in ascending order");
                         Console.WriteLine("Press 4 to get biggest number in this array");
                         Console.WriteLine("Press 5 to return number of times that two 7's are next to each other in an array");
+                        Console.WriteLine("Press 6 to checks if there are three adjacent numbers where second is greater by 1 than the first one and third is greater by 1 than the second one");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -238,6 +239,12 @@
                                 {
                                     Console.WriteLine(loop.TwoSevens(new int[] { 8, 2, 5, 7, 9, 0, 7, 7, 3, 1 }));
                                     Console.WriteLine(loop.TwoSevens(new int[] { 9, 4, 5, 3, 7, 7, 7, 3, 2, 5, 7, 7 }));
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    Console.WriteLine(loop.IncreasingAdjacent(new int[] { 45, 23, 44, 68, 65, 70, 80, 81, 82 }));
+                                    Console.WriteLine(loop.IncreasingAdjacent(new int[] { 7, 3, 5, 8, 9, 3, 1, 4 }));
                                     break;
                                 }
                             default:
