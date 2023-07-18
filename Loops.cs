@@ -26,5 +26,16 @@ namespace Logical
             }
             
         }
+
+        public double FractionSum(int num)
+        {
+            double  j=0.0;
+            for (double i = 1; i <= num; i++)
+            {
+                j = j+(1/(i*i));
+                
+            }
+            return j;
+        }
     }
 }

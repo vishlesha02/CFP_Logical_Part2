@@ -199,6 +199,7 @@
                 case 3:
                     {
                         Console.WriteLine("Press 1 to get 10 by 10 multiplication table");
+                        Console.WriteLine("Press 2 to get sum of Series (fractions)");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -208,6 +209,11 @@
                             case 1:
                                 {
                                     loop.MultiplicationTable();
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    Console.WriteLine(loop.FractionSum(5));
                                     break;
                                 }
                             default:
