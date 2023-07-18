@@ -201,6 +201,7 @@
                         Console.WriteLine("Press 1 to get 10 by 10 multiplication table");
                         Console.WriteLine("Press 2 to get sum of Series (fractions)");
                         Console.WriteLine("Press 3 to get sorted array in ascending order");
+                        Console.WriteLine("Press 4 to get biggest number in this array");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -225,8 +226,11 @@
                                     {
                                         Console.Write($"{s} "); 
                                     }
-
-
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    Console.WriteLine(loop.BiggestNumber(new int[] {190,291,145,209,280,300 }));
                                     break;
                                 }
                             default:

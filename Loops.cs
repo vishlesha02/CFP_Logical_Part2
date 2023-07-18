@@ -57,5 +57,18 @@ namespace Logical
             return arr;
 
         }
+
+        public int BiggestNumber(int[] arr)
+        {
+            int biggest = arr[0];
+            for (int i=1; i < arr.Length; i++)
+            {
+                if (arr[i] > biggest)
+                {
+                    biggest = arr[i];
+                }
+            }
+            return biggest;
+        }
     }
 }
