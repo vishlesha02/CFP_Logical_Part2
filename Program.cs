@@ -206,6 +206,7 @@
                         Console.WriteLine("Press 6 to checks if there are three adjacent numbers where second is greater by 1 than the first one and third is greater by 1 than the second one");
                         Console.WriteLine("Press 7 to return a string of even numbers greater than 0 and less than 100");
                         Console.WriteLine("Press 8 to draw hourglass shape");
+                        Console.WriteLine("Press 9 to draw parallelogram");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -257,6 +258,11 @@
                             case 8:
                                 {
                                     loop.HourGlass();
+                                    break;
+                                }
+                            case 9:
+                                {
+                                    loop.Parallelogram();
                                     break;
                                 }
                             default:
