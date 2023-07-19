@@ -212,6 +212,7 @@
                         Console.WriteLine("Press 12 to get value of the longest strictly increasing sequence of numbers");
                         Console.WriteLine("Press 13 to return sum of its digits");
                         Console.WriteLine("Press 14 to return sum of all integers and average from range [n, m]");
+                        Console.WriteLine("Press 15 to return sum of objects of double type");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -298,6 +299,11 @@
                                 {
                                     Console.WriteLine(loop.SumAndAverage(11,66));
                                     Console.WriteLine(loop.SumAndAverage(-10,0));
+                                    break;
+                                }
+                            case 15:
+                                {
+                                    Console.WriteLine(loop.SumDoubleOnly(new object[] { "abc", 5.6, 14, 'c', true, 'x', false, 567, 2.22 }));
                                     break;
                                 }
                             default:

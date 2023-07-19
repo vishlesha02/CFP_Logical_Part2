@@ -278,5 +278,20 @@
             
         }
 
+        public double SumDoubleOnly(object[] arr)
+        {
+            double sum = 0.0;
+            
+
+            for (int i = 0; i <= arr.Length-1; i++)
+            {
+                if (arr[i] is double)
+                {
+                    sum += (double)arr[i];
+                }
+            }
+            return sum;
+        }
+
     }
 }
