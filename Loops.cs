@@ -219,5 +219,32 @@
 
             return fullSequence;
         }
+
+
+        public int LongestStrictlyIncreasingSequence(int[] arr)
+        {
+             int tempLongest = 0;
+                int longest = 0;
+
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+               
+                if (arr[i + 1] > arr[i])
+                {
+                    tempLongest++;
+                }
+                else
+                {
+                    tempLongest = 0;
+                }
+
+                if (tempLongest > longest)
+                {
+                    longest = tempLongest;
+                }
+
+            }
+            return longest;
+        }
     }
 }

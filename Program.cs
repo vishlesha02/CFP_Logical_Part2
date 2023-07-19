@@ -209,6 +209,7 @@
                         Console.WriteLine("Press 9 to draw parallelogram");
                         Console.WriteLine("Press 10 to draw Christmas Tree");
                         Console.WriteLine("Press 11 to get full sequence of letters starting from first and ending at the second one");
+                        Console.WriteLine("Press 12 to get value of the longest strictly increasing sequence of numbers");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -277,6 +278,13 @@
                                     Console.WriteLine(loop.SequenceOfLetters("bg"));
                                     Console.WriteLine(loop.SequenceOfLetters("ap"));
                                     break;
+                                }
+                            case 12:
+                                {
+                                    Console.WriteLine(loop.LongestStrictlyIncreasingSequence(new int[] { 4, 7, 2, 6, 4, 5, 6, 7, 8, 0, 7, 1, 2, 3 }));
+                                    break;
+                                    // 2 4 6 7 8 99 100 
+                                    // 1 23 4 5
                                 }
                             default:
                                 {
