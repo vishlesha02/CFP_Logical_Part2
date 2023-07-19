@@ -246,5 +246,37 @@
             }
             return longest;
         }
+
+        public int DigitsSum(int num)
+        {
+            int sum=0;  // 4 
+           while(num > 0) {
+                Console.WriteLine(num);
+                Console.WriteLine(num%10);
+                Console.WriteLine(num / 10);// removes last digit  5434
+
+                sum =  sum +num % 10;   // gives last dgiti   5434
+                num = num / 10;
+                Console.WriteLine();
+
+                /*5434
+                4
+                543
+
+                543
+                3
+                54
+
+                54
+                4
+                5
+
+                5
+                5
+                0
+                */
+            }
+            return sum;
+        }
     }
 }

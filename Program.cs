@@ -210,6 +210,7 @@
                         Console.WriteLine("Press 10 to draw Christmas Tree");
                         Console.WriteLine("Press 11 to get full sequence of letters starting from first and ending at the second one");
                         Console.WriteLine("Press 12 to get value of the longest strictly increasing sequence of numbers");
+                        Console.WriteLine("Press 13 to return sum of its digits");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -285,6 +286,12 @@
                                     break;
                                     // 2 4 6 7 8 99 100 
                                     // 1 23 4 5
+                                }
+                            case 13:
+                                {
+                                    Console.WriteLine(loop.DigitsSum(5434));
+                                    Console.WriteLine(loop.DigitsSum(904861));
+                                    break;
                                 }
                             default:
                                 {
