@@ -214,6 +214,7 @@
                         Console.WriteLine("Press 14 to return sum of all integers and average from range [n, m]");
                         Console.WriteLine("Press 15 to return sum of objects of double type");
                         Console.WriteLine("Press 16 to draw triangle shape");
+                        Console.WriteLine("Press 17 to return first number raised to the power of second one");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -310,6 +311,12 @@
                             case 16:
                                 {
                                     loop.DrawTriangle();
+                                    break;
+                                } 
+                            case 17:
+                                {
+                                    Console.WriteLine(loop.ToThePowerOf(-2,3));
+                                    Console.WriteLine(loop.ToThePowerOf(5,5));
                                     break;
                                 }
                             default:
