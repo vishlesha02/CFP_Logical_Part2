@@ -207,6 +207,7 @@
                         Console.WriteLine("Press 7 to return a string of even numbers greater than 0 and less than 100");
                         Console.WriteLine("Press 8 to draw hourglass shape");
                         Console.WriteLine("Press 9 to draw parallelogram");
+                        Console.WriteLine("Press 10 to draw Christmas Tree");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -263,6 +264,11 @@
                             case 9:
                                 {
                                     loop.Parallelogram();
+                                    break;
+                                }
+                            case 10:
+                                {
+                                    loop.ChristmasTree();
                                     break;
                                 }
                             default:
