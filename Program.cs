@@ -208,6 +208,7 @@
                         Console.WriteLine("Press 8 to draw hourglass shape");
                         Console.WriteLine("Press 9 to draw parallelogram");
                         Console.WriteLine("Press 10 to draw Christmas Tree");
+                        Console.WriteLine("Press 11 to get full sequence of letters starting from first and ending at the second one");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -269,6 +270,12 @@
                             case 10:
                                 {
                                     loop.ChristmasTree();
+                                    break;
+                                }
+                            case 11:
+                                {
+                                    Console.WriteLine(loop.SequenceOfLetters("bg"));
+                                    Console.WriteLine(loop.SequenceOfLetters("ap"));
                                     break;
                                 }
                             default:

@@ -208,5 +208,16 @@
                 Console.WriteLine();
             }
         }
+
+        public string SequenceOfLetters(string word)
+        {
+            string fullSequence = null;
+            for (int i = word[0]; i <= word[1]; i++)
+            {
+                fullSequence = fullSequence + (char)(i);
+            }
+
+            return fullSequence;
+        }
     }
 }
