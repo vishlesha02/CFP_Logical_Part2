@@ -211,6 +211,7 @@
                         Console.WriteLine("Press 11 to get full sequence of letters starting from first and ending at the second one");
                         Console.WriteLine("Press 12 to get value of the longest strictly increasing sequence of numbers");
                         Console.WriteLine("Press 13 to return sum of its digits");
+                        Console.WriteLine("Press 14 to return sum of all integers and average from range [n, m]");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -291,6 +292,12 @@
                                 {
                                     Console.WriteLine(loop.DigitsSum(5434));
                                     Console.WriteLine(loop.DigitsSum(904861));
+                                    break;
+                                }
+                            case 14:
+                                {
+                                    Console.WriteLine(loop.SumAndAverage(11,66));
+                                    Console.WriteLine(loop.SumAndAverage(-10,0));
                                     break;
                                 }
                             default:

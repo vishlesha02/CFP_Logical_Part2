@@ -139,7 +139,7 @@
 
         public void Parallelogram()
         {
-            for (int i = 5; i >=1; i--)
+            for (int i = 5; i >= 1; i--)
             {
                 for (int j = 1; j < i; j++)
                 {
@@ -147,9 +147,9 @@
                 }
                 for (int k = 1; k <= 8; k++)
                 {
-                    
-                        Console.Write("*");
-                    
+
+                    Console.Write("*");
+
                 }
                 Console.WriteLine();
             }
@@ -157,18 +157,18 @@
 
         public void ChristmasTree()
         {
-            for (int i = 1; i <=5; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                for (int j=4;j>=i;j--)
+                for (int j = 4; j >= i; j--)
                 {
                     Console.Write(" ");
                 }
-                for (int k=1;k<=i;k++)
+                for (int k = 1; k <= i; k++)
                 {
                     Console.Write("*");
                 }
-                for (int l=2;l<=i;l++)
-                { 
+                for (int l = 2; l <= i; l++)
+                {
                     Console.Write("*");
                 }
                 Console.WriteLine();
@@ -223,12 +223,12 @@
 
         public int LongestStrictlyIncreasingSequence(int[] arr)
         {
-             int tempLongest = 0;
-                int longest = 0;
+            int tempLongest = 0;
+            int longest = 0;
 
-            for (int i = 0; i < arr.Length-1; i++)
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-               
+
                 if (arr[i + 1] > arr[i])
                 {
                     tempLongest++;
@@ -249,34 +249,34 @@
 
         public int DigitsSum(int num)
         {
-            int sum=0;  // 4 
-           while(num > 0) {
-                Console.WriteLine(num);
-                Console.WriteLine(num%10);
-                Console.WriteLine(num / 10);// removes last digit  5434
+            int sum = 0;
+            while (num > 0)
+            {
 
-                sum =  sum +num % 10;   // gives last dgiti   5434
+                sum = sum + num % 10;
                 num = num / 10;
                 Console.WriteLine();
 
-                /*5434
-                4
-                543
 
-                543
-                3
-                54
-
-                54
-                4
-                5
-
-                5
-                5
-                0
-                */
             }
             return sum;
         }
+
+        public string SumAndAverage(int n,int m)
+        {
+            int sum = 0;
+            int count = 0;
+            double avg=0.0;
+                for (int i = n; i <= m; i++)
+                {
+                sum = sum + i;
+                count++;
+                }
+            avg = sum / (double)count;
+
+            return $"sum = { sum} avg={avg}";
+            
+        }
+
     }
 }
