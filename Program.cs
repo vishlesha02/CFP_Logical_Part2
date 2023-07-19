@@ -213,6 +213,7 @@
                         Console.WriteLine("Press 13 to return sum of its digits");
                         Console.WriteLine("Press 14 to return sum of all integers and average from range [n, m]");
                         Console.WriteLine("Press 15 to return sum of objects of double type");
+                        Console.WriteLine("Press 16 to draw triangle shape");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -304,6 +305,11 @@
                             case 15:
                                 {
                                     Console.WriteLine(loop.SumDoubleOnly(new object[] { "abc", 5.6, 14, 'c', true, 'x', false, 567, 2.22 }));
+                                    break;
+                                } 
+                            case 16:
+                                {
+                                    loop.DrawTriangle();
                                     break;
                                 }
                             default:

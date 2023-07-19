@@ -262,28 +262,28 @@
             return sum;
         }
 
-        public string SumAndAverage(int n,int m)
+        public string SumAndAverage(int n, int m)
         {
             int sum = 0;
             int count = 0;
-            double avg=0.0;
-                for (int i = n; i <= m; i++)
-                {
+            double avg = 0.0;
+            for (int i = n; i <= m; i++)
+            {
                 sum = sum + i;
                 count++;
-                }
+            }
             avg = sum / (double)count;
 
-            return $"sum = { sum} avg={avg}";
-            
+            return $"sum = {sum} avg={avg}";
+
         }
 
         public double SumDoubleOnly(object[] arr)
         {
             double sum = 0.0;
-            
 
-            for (int i = 0; i <= arr.Length-1; i++)
+
+            for (int i = 0; i <= arr.Length - 1; i++)
             {
                 if (arr[i] is double)
                 {
@@ -293,5 +293,23 @@
             return sum;
         }
 
+        public void DrawTriangle()
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 10; j >= i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+
+            }
+        }
     }
+
 }
+
