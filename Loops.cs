@@ -1,4 +1,6 @@
-﻿namespace Logical
+﻿using System.Diagnostics.Tracing;
+
+namespace Logical
 {
     public class Loops
     {
@@ -319,6 +321,22 @@
                 result = result * a;
             }
             return result;
+        }
+
+        public bool LettersBalance(string letters)
+        {
+            for (int i = 1; i < letters.Length/2; i++)
+            {
+                for (int j = letters.Length - 1; j >= letters.Length / 2; j--)
+                {
+                    if (letters[i] == letters[j])
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+
         }
     }
 

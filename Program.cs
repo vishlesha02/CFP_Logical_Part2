@@ -215,6 +215,7 @@
                         Console.WriteLine("Press 15 to return sum of objects of double type");
                         Console.WriteLine("Press 16 to draw triangle shape");
                         Console.WriteLine("Press 17 to return first number raised to the power of second one");
+                        Console.WriteLine("Press 18 to check if there are exactly the same letters on the left side and right side of the string");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice4 = int.Parse(Console.ReadLine());
@@ -317,6 +318,12 @@
                                 {
                                     Console.WriteLine(loop.ToThePowerOf(-2,3));
                                     Console.WriteLine(loop.ToThePowerOf(5,5));
+                                    break;
+                                }
+                            case 18:
+                                {
+                                    Console.WriteLine(loop.LettersBalance("fgvgvf"));
+                                    Console.WriteLine(loop.LettersBalance("lampddn"));
                                     break;
                                 }
                             default:
