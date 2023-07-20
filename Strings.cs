@@ -128,5 +128,25 @@ namespace Logical
             }
             return newStr;
         }
+
+        public int NumberOfWords(string str)
+        {
+            int count = 0;
+            bool insideWord=false;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (char.IsWhiteSpace(str[i]))
+                {
+                     insideWord = false;
+                }
+                else if(!insideWord)
+                {
+                    insideWord= true;   
+                    count++;
+                }
+            }
+            return count ;
+        }
     }
 }
