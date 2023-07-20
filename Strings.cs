@@ -75,5 +75,20 @@ namespace Logical
             }
             return newStr;
         }
+
+        public int SumDigitOfString(string str)
+        {
+            
+            int sum = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (char.IsDigit(str[i]))
+                {
+                    sum += (int)char.GetNumericValue(str[i]);
+
+                }
+            }
+            return sum;
+        }
     }
 }
