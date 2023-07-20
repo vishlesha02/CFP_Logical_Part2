@@ -53,5 +53,16 @@ namespace Logical
             }
             return true;
         }
+
+        public int LengthOfString(string str)
+        {
+            int count = 0;
+         
+            for (int i = 0; i < str.Length; i++)
+            {
+                count++;
+            }
+            return count;
+        }
     }
 }
