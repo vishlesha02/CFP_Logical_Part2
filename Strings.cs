@@ -148,5 +148,26 @@ namespace Logical
             }
             return count ;
         }
+
+        public int HowManyOccurrences(string str,string subStr)
+        {
+           
+            int count = 0;
+
+            int found;
+            
+            for (int i = 0; i < str.Length; i++)
+            {
+                found = str.IndexOf(subStr, i);
+
+                if (found > -1)
+                {
+                    count++;
+                    i = found;
+                }
+            }
+            return count;
+        
+        }
     }
 }

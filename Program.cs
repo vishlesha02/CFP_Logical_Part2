@@ -348,6 +348,7 @@
                         Console.WriteLine("press 7 to return new string in which every odd letter of the word is uppercase");
                         Console.WriteLine("press 8 to return one string made of two strings. First letter of new string is first letter of first string, second letter of new string is first letter of second string ");
                         Console.WriteLine("press 9 to count number of words in a string");
+                        Console.WriteLine("press 10 to return number of occurrences of substring in the string");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice5 = int.Parse(Console.ReadLine());
@@ -407,6 +408,12 @@
                                 {
                                     Console.WriteLine(strObj.NumberOfWords("This is sample sentence"));
                                     Console.WriteLine(strObj.NumberOfWords("OK"));
+                                    break;
+                                } 
+                            case 10:
+                                {
+                                    Console.WriteLine(strObj.HowManyOccurrences("do it now","do"));
+                                    Console.WriteLine(strObj.HowManyOccurrences("empty", "d"));
                                     break;
                                 }
                             default:
