@@ -341,6 +341,7 @@
                     {
                         Console.WriteLine("press 1 to check sequence of brackets");
                         Console.WriteLine("press 2 add separator between each adjacent characters in a string");
+                        Console.WriteLine("press 3 to check if it is a palindrome (is read the same backward as forward)");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice5 = int.Parse(Console.ReadLine());
@@ -357,6 +358,12 @@
                                 {
                                     Console.WriteLine(strObj.AddSeparator("ABCD", "^"));
                                     Console.WriteLine(strObj.AddSeparator("chocolate", "-"));
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    Console.WriteLine(strObj.Palindrome("eye"));
+                                    Console.WriteLine(strObj.Palindrome("home"));
                                     break;
                                 }
                             default:
