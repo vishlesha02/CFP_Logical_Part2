@@ -343,6 +343,7 @@
                         Console.WriteLine("press 2 add separator between each adjacent characters in a string");
                         Console.WriteLine("press 3 to check if it is a palindrome (is read the same backward as forward)");
                         Console.WriteLine("press 4 to return length of string");
+                        Console.WriteLine("press 5 to return string in reverse order");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice5 = int.Parse(Console.ReadLine());
@@ -371,6 +372,12 @@
                                 {
                                     Console.WriteLine(strObj.LengthOfString("computer"));
                                     Console.WriteLine(strObj.LengthOfString("ice cream"));
+                                    break;
+                                } 
+                            case 5:
+                                {
+                                    Console.WriteLine(strObj.StringInReverse("qwerty"));
+                                    Console.WriteLine(strObj.StringInReverse("oe93 kr"));
                                     break;
                                 }
                             default:
