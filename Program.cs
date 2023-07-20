@@ -344,7 +344,8 @@
                         Console.WriteLine("press 3 to check if it is a palindrome (is read the same backward as forward)");
                         Console.WriteLine("press 4 to return length of string");
                         Console.WriteLine("press 5 to return string in reverse order");
-                        Console.WriteLine("press 6 to  sum of all digits in that string");
+                        Console.WriteLine("press 6 to sum of all digits in that string");
+                        Console.WriteLine("press 7 to returns new string in which every odd letter of the word is uppercase");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice5 = int.Parse(Console.ReadLine());
@@ -385,6 +386,13 @@
                                 {
                                     Console.WriteLine(strObj.SumDigitOfString("1q2w3e"));
                                     Console.WriteLine(strObj.SumDigitOfString("L0r3m.1p5um"));
+                                    break;
+                                }
+                            case 7:
+                                {
+                                    Console.WriteLine(strObj.MakeUpperCase("modem"));
+                                    Console.WriteLine(strObj.MakeUpperCase("BookWorm"));
+                                    Console.WriteLine(strObj.MakeUpperCase("Aliquam dolor nisl?"));
                                     break;
                                 }
                             default:

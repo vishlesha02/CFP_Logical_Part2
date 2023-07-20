@@ -90,5 +90,24 @@ namespace Logical
             }
             return sum;
         }
+
+        public string MakeUpperCase(string str)
+        {
+            string newStr = "";
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    newStr += char.ToUpper(str[i]);
+
+                }
+                else 
+                {
+                    newStr += str[i];
+                }
+            }
+
+            return newStr;
+        }
     }
 }
