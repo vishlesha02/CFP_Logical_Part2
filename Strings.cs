@@ -109,5 +109,24 @@ namespace Logical
 
             return newStr;
         }
+
+        public string MixTwoStrings(string str1, string str2)
+        {
+            string newStr = "";
+            int maxLength = Math.Max(str1.Length, str2.Length);
+
+            for (int i = 0; i < maxLength; i++)
+            {
+                if (i < str1.Length)
+                {
+                    newStr += str1[i];
+                }
+                if(i < str2.Length)
+                {
+                    newStr += str2[i];
+                }
+            }
+            return newStr;
+        }
     }
 }

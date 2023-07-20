@@ -345,7 +345,8 @@
                         Console.WriteLine("press 4 to return length of string");
                         Console.WriteLine("press 5 to return string in reverse order");
                         Console.WriteLine("press 6 to sum of all digits in that string");
-                        Console.WriteLine("press 7 to returns new string in which every odd letter of the word is uppercase");
+                        Console.WriteLine("press 7 to return new string in which every odd letter of the word is uppercase");
+                        Console.WriteLine("press 8 to return one string made of two strings. First letter of new string is first letter of first string, second letter of new string is first letter of second string ");
                         Console.WriteLine("-----------------------------------------");
 
                         int choice5 = int.Parse(Console.ReadLine());
@@ -393,6 +394,12 @@
                                     Console.WriteLine(strObj.MakeUpperCase("modem"));
                                     Console.WriteLine(strObj.MakeUpperCase("BookWorm"));
                                     Console.WriteLine(strObj.MakeUpperCase("Aliquam dolor nisl?"));
+                                    break;
+                                }
+                            case 8:
+                                {
+                                    Console.WriteLine(strObj.MixTwoStrings("aaa", "BBB"));
+                                    Console.WriteLine(strObj.MixTwoStrings("good one", "111"));
                                     break;
                                 }
                             default:
