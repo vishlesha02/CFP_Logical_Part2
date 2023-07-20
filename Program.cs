@@ -8,11 +8,13 @@
             Basic basic = new Basic();
             ConditionalStatement conditional = new ConditionalStatement();
             Loops loop = new Loops();
+            Strings strObj =new Strings();
 
             Console.WriteLine("Press 1 for Basic");
             Console.WriteLine("Press 2 for Conditional Statements");
             Console.WriteLine("Press 3 for Loops ");
-            Console.WriteLine("press 4 to Exit");
+            Console.WriteLine("Press 4 for Strings ");
+            Console.WriteLine("press 5 to Exit");
             Console.WriteLine("-----------------------------------------");
 
 
@@ -337,7 +339,24 @@
 
                 case 4:
                     {
+                        Console.WriteLine("press 1 to check sequence of brackets");
+                        Console.WriteLine("-----------------------------------------");
 
+                        int choice5=int.Parse(Console.ReadLine());
+
+                        switch (choice5)
+                        {
+                            case 1:
+                                {
+                                    Console.WriteLine(strObj.BracketsSequence("((()))"));
+                                    Console.WriteLine(strObj.BracketsSequence("()(())("));
+                                    break;
+                                }
+                        }
+                        break;
+                    }
+                case 5:
+                    {
                         break;
                     }
                 default:
