@@ -24,5 +24,21 @@ namespace Logical
             }
             return count == 0;
         }
+
+        public string AddSeparator(string letter,string separator)
+        {
+            string word = null;
+            for (int i = 0; i < letter.Length; i++)
+            { 
+                word = word + letter[i];
+                //word = word + separator;
+                if (i != letter.Length - 1)
+                { 
+                    word += separator;
+                }
+            }
+            return word;
+
+        }
     }
 }

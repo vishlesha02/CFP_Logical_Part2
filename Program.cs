@@ -4,11 +4,11 @@
     {
         public static void Main(string[] args)
         {
-            
+
             Basic basic = new Basic();
             ConditionalStatement conditional = new ConditionalStatement();
             Loops loop = new Loops();
-            Strings strObj =new Strings();
+            Strings strObj = new Strings();
 
             Console.WriteLine("Press 1 for Basic");
             Console.WriteLine("Press 2 for Conditional Statements");
@@ -197,7 +197,7 @@
                         break;
 
                     }
-              
+
                 case 3:
                     {
                         Console.WriteLine("Press 1 to get 10 by 10 multiplication table");
@@ -240,13 +240,13 @@
 
                                     foreach (var s in sortedArr)
                                     {
-                                        Console.Write($"{s} "); 
+                                        Console.Write($"{s} ");
                                     }
                                     break;
                                 }
                             case 4:
                                 {
-                                    Console.WriteLine(loop.BiggestNumber(new int[] {190,291,145,209,280,300 }));
+                                    Console.WriteLine(loop.BiggestNumber(new int[] { 190, 291, 145, 209, 280, 300 }));
                                     break;
                                 }
                             case 5:
@@ -302,24 +302,24 @@
                                 }
                             case 14:
                                 {
-                                    Console.WriteLine(loop.SumAndAverage(11,66));
-                                    Console.WriteLine(loop.SumAndAverage(-10,0));
+                                    Console.WriteLine(loop.SumAndAverage(11, 66));
+                                    Console.WriteLine(loop.SumAndAverage(-10, 0));
                                     break;
                                 }
                             case 15:
                                 {
                                     Console.WriteLine(loop.SumDoubleOnly(new object[] { "abc", 5.6, 14, 'c', true, 'x', false, 567, 2.22 }));
                                     break;
-                                } 
+                                }
                             case 16:
                                 {
                                     loop.DrawTriangle();
                                     break;
-                                } 
+                                }
                             case 17:
                                 {
-                                    Console.WriteLine(loop.ToThePowerOf(-2,3));
-                                    Console.WriteLine(loop.ToThePowerOf(5,5));
+                                    Console.WriteLine(loop.ToThePowerOf(-2, 3));
+                                    Console.WriteLine(loop.ToThePowerOf(5, 5));
                                     break;
                                 }
                             case 18:
@@ -340,9 +340,10 @@
                 case 4:
                     {
                         Console.WriteLine("press 1 to check sequence of brackets");
+                        Console.WriteLine("press 2 add separator between each adjacent characters in a string");
                         Console.WriteLine("-----------------------------------------");
 
-                        int choice5=int.Parse(Console.ReadLine());
+                        int choice5 = int.Parse(Console.ReadLine());
 
                         switch (choice5)
                         {
@@ -350,6 +351,17 @@
                                 {
                                     Console.WriteLine(strObj.BracketsSequence("((()))"));
                                     Console.WriteLine(strObj.BracketsSequence("()(())("));
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    Console.WriteLine(strObj.AddSeparator("ABCD", "^"));
+                                    Console.WriteLine(strObj.AddSeparator("chocolate", "-"));
+                                    break;
+                                }
+                            default:
+                                {
+                                    Console.WriteLine("You Entered Wrong Number");
                                     break;
                                 }
                         }
