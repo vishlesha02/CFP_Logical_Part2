@@ -169,5 +169,25 @@ namespace Logical
             return count;
         
         }
+
+        public char[] SortCharactersDescending(string arr)
+        {
+            char[] charArray = arr.ToCharArray();
+            char temp;
+
+            for (int i = 0; i < charArray.Length; i++)
+            {
+                for (int j = i + 1; j < charArray.Length; j++)
+                {
+                    if (charArray[i] < charArray[j])
+                    {
+                        temp = charArray[i];
+                        charArray[i] = charArray[j];
+                        charArray[j] = temp;
+                    }
+                }
+            }
+            return charArray;
+        }
     }
 }
